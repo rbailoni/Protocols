@@ -8,15 +8,15 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "Protocols.Network",
-            targets: ["Network"]),
-        .library(name: "Protocols.ViewCode",
-                 targets: ["ViewCode"])
+            name: "NetworkProtocols",
+            targets: ["NetworkProtocols"]),
+        .library(name: "ViewCodeProtocols",
+                 targets: ["ViewCodeProtocols"])
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
-        .target(name: "Network"),
-        .target(name: "ViewCode")
+        .target(name: "NetworkProtocols"),
+        .target(name: "ViewCodeProtocols")
     ]
 )
