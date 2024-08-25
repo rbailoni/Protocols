@@ -8,9 +8,9 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "Network",
+            name: "Protocols.Network",
             targets: ["Network"]),
-        .library(name: "ViewCode",
+        .library(name: "Protocols.ViewCode",
                  targets: ["ViewCode"])
     ],
     targets: [
